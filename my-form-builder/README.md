@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# my-form-builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 概要
 
-## Available Scripts
+my-form-builderは、ReactとMaterial-UIを用いたドラッグ＆ドロップ式のフォームビルダーです。Webブラウザ上でフォーム部品（テキスト入力、テキストエリア、チェックボックス、ラジオボタン）を自由に配置し、リアルタイムでプレビューやJSON出力が可能です。
 
-In the project directory, you can run:
+## 主な機能
+- ドラッグ＆ドロップでフォーム部品を追加・並び替え
+- 右側でフォームのプレビュー表示
+- 生成されたフォーム定義のJSON出力
 
-### `npm start`
+## 動作環境
+- Node.js 16以上推奨
+- npm 7以上推奨
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## セットアップ手順
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. リポジトリをクローン
+   ```sh
+   git clone <このリポジトリのURL>
+   cd my-form-builder/my-form-builder
+   ```
 
-### `npm test`
+2. 依存パッケージのインストール
+   ```sh
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. 開発サーバーの起動
+   ```sh
+   npm start
+   ```
 
-### `npm run build`
+4. ブラウザでアクセス
+   - http://localhost:3000 を開くとアプリが表示されます。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ディレクトリ構成
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+my-form-builder/
+  ├─ my-form-builder/
+      ├─ src/
+          ├─ components/
+              ├─ FormBuilder.js
+              ├─ FormRenderer.js
+              └─ builder/
+                  ├─ Canvas.js
+                  ├─ CanvasItem.js
+                  ├─ Toolbox.js
+                  └─ ToolboxItem.js
+          ├─ App.js
+          ├─ index.js
+          └─ ...
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 主要依存パッケージ
+- react
+- react-dom
+- react-scripts
+- @mui/material
+- @emotion/react, @emotion/styled
+- react-dnd, react-dnd-html5-backend
+- uuid
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ライセンス
+このプロジェクトはMITライセンスです。
