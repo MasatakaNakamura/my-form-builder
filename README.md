@@ -17,7 +17,7 @@ my-form-builderは、ReactとMaterial-UIを用いたドラッグ＆ドロップ�
 
 1. リポジトリをクローン
    ```sh
-   git clone <このリポジトリのURL>
+   git clone git@github.com:MasatakaNakamura/my-form-builder.git
    cd my-form-builder/my-form-builder
    ```
 
